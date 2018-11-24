@@ -3,16 +3,19 @@
 }
 label{
     margin: 10px;
-  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 input{
 
         margin: 10px;
+       
 }
 form{
     box-shadow: 5px 10px 20px #000;
     padding: 5px;
     max-width: 400px;
+    height: 300px;
+    text-align: center;
 }
 button{
     display: inline;
@@ -20,6 +23,32 @@ button{
     border: none;
     padding:  15px 30px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px #000;
+}
+#res{
+    border-style: inset;
+    height: 50px;
+    
+}
+#result{
+    margin: 5px;
+}
+input[type= text]{
+    padding: 10px 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    box-shadow: 2px 4px 10px #000;
+}
+input[type=text]:focus {
+    width: 75%;
+}
+input[type= number ]{
+    padding: 10px 5px;
+    box-shadow: 2px 4px 10px #000;
+}
+body{
+   margin: 0  auto;
 }
