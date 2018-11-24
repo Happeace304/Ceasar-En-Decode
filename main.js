@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('#encode').click(function () {
         var Txt = removeDiacritics($('#text').val());
-        if (!hasNumber(Txt)) {
+      
             var Num = parseInt($('#number').val());
             var Temp = '';
             var upper=1;
@@ -24,11 +24,11 @@ $(document).ready(function () {
                 Temp += String.fromCharCode(char);
             }
             $('#result').html(Temp);
-        }
+        
     });
     $('#decode').click(function () {
         var Txt = removeDiacritics($('#text').val());
-        if (!hasNumber(Txt)) {
+     
             var Num = parseInt($('#number').val());
             var Temp = '';
             var upper=1;
@@ -50,7 +50,7 @@ $(document).ready(function () {
                 Temp += String.fromCharCode(char);
             }
             $('#result').html(Temp);
-        }
+        
     });
    
     var hasNumber = function (myString) {
